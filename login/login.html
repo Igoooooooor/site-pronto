@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - C.I Store</title>
+    <link rel="stylesheet" href="../login/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login na sua conta</h2>
+        <!-- Botão de login do Google -->
+<div id="g_id_onload"
+data-client_id="424536761594-n7hngq5sedme2prpqm788o9esplhvbgr.apps.googleusercontent.com"
+data-context="signin"
+data-ux_mode="popup"
+data-callback="handleCredentialResponse"
+data-auto_prompt="false">
+</div>
+
+<div class="google-btn">
+<div class="g_id_signin"
+    data-type="standard"
+    data-size="large">
+</div>
+</div>
+
+<!-- SDK do Google -->
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="../login/login.js"></script>
+        <div class="divider">Ou</div>
+        <form onsubmit="login(event)">
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <div class="input-icon">
+                    <input type="email" id="email" placeholder="Digite seu email" required>
+                    <span class="icon">@</span>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha:</label>
+                <div class="input-icon">
+                    <input type="password" id="password" placeholder="Sua senha" required>
+                    <span class="icon">🔒</span>
+                </div>
+            </div>
+            <button type="submit" class="login-btn">Entrar</button>
+        </form>
+        <div class="links">
+            <a href="#">Esqueci minha senha</a>
+            <a href="../index.html" class="botao">Criar conta</a>
+        </div>
+    </div>
+    <script src="../login/login.js"></script>
+
+    
+</body>
+</html>

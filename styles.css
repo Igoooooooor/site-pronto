@@ -1,0 +1,75 @@
+/* frontend/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0a0a0a;
+    margin: 0;
+}
+
+.container {
+    background: #131313;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    text-align: center;
+    width: 350px;
+}
+
+h2 {
+    color: #fff;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    width: calc(100% - 20px); /* Ajuste para alinhar corretamente */
+    margin: 10px auto;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #2a2a2a;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+    text-align: left;
+}
+
+input::placeholder {
+    color: #bdbdbd;
+}
+
+button {
+    background: #4cff4c;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #33cc33;
+}
+
+p {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+p a {
+    color: #4cff4c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
